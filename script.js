@@ -18,6 +18,7 @@ let number1
 let operator
 let number2
 
+
 const operate = function(operator, number1, number2){
     if (operator === '+'){
         add(number1, number2);
