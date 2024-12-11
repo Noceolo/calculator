@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Press_start_2P;
+    src: url(fonts/Press_Start_2P\,VT323/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: VT323;
+    src: url(fonts/Press_Start_2P\,VT323/VT323/VT323-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #2f347c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.container {
+    background-color: #2b2b2b;
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-shrink: 0;
+}
+
+.heading {
+    height: 60px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Press_start_2P;
+    text-shadow: 2px 2px 2px   grey;
+    font-size: 50px;
+    
+}
+
+.screen {
+    height: 120px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #F3E9D2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: Press_start_2P;
+    color: #2b2b2b;
+}
+
+.pad {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 10px;
+    gap: 20px;
+}
+
+.numPad {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(66%);
+    justify-content: center;
+    
+
+}
+
+.num {
+    width: calc(100%/3);
+    border-radius: 20px;
+    font-family: VT323;
+    font-size: 35px;
+    background-color: #4A7C59;
+    color: white;
+    
+}
+
+.operatorPad {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(33%);
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.operator {
+    width: calc(45%);
+    border-radius: 20px;
+    height: 100px;
+    font-family: VT323;
+    font-size: 35px;
+    background-color: #E68A00;
+    color: white;
+}
+
+.clear {
+    width: calc(50%);
+    height: 100px;
+    border-radius: 20px;
+    font-family: VT323;
+    font-size: 35px;
+}
