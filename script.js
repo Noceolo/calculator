@@ -17,6 +17,17 @@ const divide = function(a, b) {
 let number1 
 let operator
 let number2
+let display
+
+function eraseText() {
+    document.getElementById("screen").textContent = "";
+    number1 = 0
+    operator = 0
+    number2 = 0
+}
+
+
+
 
 
 const operate = function(operator, number1, number2){
@@ -31,3 +42,6 @@ const operate = function(operator, number1, number2){
     }
 
 }
+
+// clearButton.addEventListener("click", eraseText());
+
