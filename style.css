@@ -111,6 +111,16 @@ body {
     color: white;
 }
 
+.result {
+    width: calc(45%);
+    border-radius: 20px;
+    height: 100px;
+    font-family: VT323;
+    font-size: 35px;
+    background-color: #E68A00;
+    color: white;
+}
+
 .clear {
     width: calc(50%);
     height: 100px;
