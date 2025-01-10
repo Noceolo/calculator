@@ -24,9 +24,7 @@ const operate = function(operator, number1, number2){
         return multiply(number1,number2)
 
     }else if (operator === '/'){
-        if ((number1 = 0) || (number1 = null) || (number2 = 0) || (number2 = null)){
-            screen.textContent = "ERROR"
-        }
+        
         return divide(number1,number2)
     };
 }
@@ -66,7 +64,7 @@ resultButton.addEventListener("click", () => {
     if(number1 && operator) {
         number2 = screen.textContent;
         const result = operate(operator, number1, number2);
-        screen.textContent = result;
+        screen.textContent = result.toFixed(2);
         number1 = null;
         number2 = null;
         operator = null;
