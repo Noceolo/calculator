@@ -1,4 +1,4 @@
-const add = (a, b) => a + b;
+const add = (a, b) => +a + +b;
 
 const substract = (a, b) => a - b;
 
@@ -28,21 +28,6 @@ numberButtons.forEach(button => {
     });
 });
 
-// operatorButtons.forEach(button => {
-//     button.addEventListener("click", event => {
-//         if (screen.textContent != "...") {
-//             number1 = screen.textContent;
-//             if (operator != null) {
-//             number2 = screen.textContent;
-//             }else {
-//             operator = event.target.getAttribute("data-operator")
-//             }
-//         }
-//         screen.textContent = " ";
-        
-
-//     });
-// });
 
 operatorButtons.forEach(button => {
     button.addEventListener("click", event => {
@@ -59,21 +44,19 @@ operatorButtons.forEach(button => {
 const operate = function(){
     number2 = screen.textContent
     if (operator === '+'){
-        screen.textContent = +number1 + +number2;
+        screen.textContent = add(number1,number2)
 
     }else if (operator === '-'){
-        screen.textContent = +number1 - +number2;
+        screen.textContent = substract(number1,number2)
 
     }else if (operator === '*'){
-        screen.textContent = +number1 * +number2;
+        screen.textContent = multiply(number1,number2)
 
     }else if (operator === '/'){
         if ((number1 = 0) || (number1 = null) || (number2 = 0) || (number2 = null)){
             screen.textContent = "ERROR"
         }
-        result = +number1 / +number2;
-        parseFloat(result);
-        screen.textContent = result;
+        screen.textContent = divide(number1,number2)
     };
 }
 
